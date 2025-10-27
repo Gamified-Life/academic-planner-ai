@@ -1,0 +1,50 @@
+# Academic Planner AI - Architecture (Day 1)
+
+## Overview
+This project is an **AI-powered academic planner** with the following major components:
+
+### Frontend
+- Built with **Next.js (React 19)** + **TypeScript**
+- Uses **TailwindCSS** for styling
+- Runs on `http://localhost:3000`
+
+### Backend
+- Built with **FastAPI (Python)** 
+- Serves REST API endpoints
+- Runs on `http://127.0.0.1:8000`
+
+### AI Engine
+- Connects to an **LLM (OpenAI/Gemini)** for scheduling, personalization, and reminders
+- Currently placeholder; will be integrated later
+
+### Database
+- Planned: **PostgreSQL**
+- Stores users, courses, tasks, reminders
+
+### Scheduler
+- Runs background jobs (deadlines, reminders)
+- Uses **Celery / APScheduler** (to be added)
+
+---
+
+## Architecture Diagram
+(Insert diagram image here – created in [Excalidraw](https://excalidraw.com) or [draw.io](https://app.diagrams.net))
+
+High-level flow:
+
+Frontend (Next.js) <---> Backend (FastAPI) <---> Database (Postgres)
+|
+v
+AI Engine (LLM)
+|
+v
+Scheduler / Notifications
+
+
+---
+
+## Next Steps
+- Connect frontend API → backend API
+- Setup database migrations
+- Add basic authentication
+- Implement scheduling logic
